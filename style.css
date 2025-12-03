@@ -51,24 +51,26 @@ header nav a {
 
 /* FIXED LOGO SIZE */
 .logo-img {
-    width: 45px;        /* FIXED WIDTH */
-    height: 45px;       /* FIXED HEIGHT */
+    width: 45px;
+    height: 45px;
     object-fit: cover;
     margin-right: 10px;
-    border-radius: 50%; /* circular logo */
+    border-radius: 50%;
 }
+
 /* 3-DOT ICON */
 .menu-icon {
-    display: none;  /* hidden on desktop */
+    display: none;
     font-size: 32px;
     cursor: pointer;
     color: #e6b800;
 }
-/* MOBILE MENU HIDE / SHOW */
+
+/* MOBILE MENU */
 @media (max-width: 700px) {
 
     header nav {
-        display: none;           /* hide menu by default */
+        display: none;
         position: absolute;
         top: 70px;
         right: 20px;
@@ -86,11 +88,11 @@ header nav a {
     }
 
     header nav.active {
-        display: flex;          /* shows menu when active */
+        display: flex;
     }
 
     .menu-icon {
-        display: block;         /* show 3-dot icon on mobile */
+        display: block;
     }
 }
 
@@ -136,6 +138,7 @@ header nav a {
     box-shadow: 0 0 15px rgba(230, 184, 0, 0.4);
 }
 
+
 /* ===========================
    SECTIONS
 =========================== */
@@ -150,6 +153,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+
 /* ===========================
    GALLERY
 =========================== */
@@ -158,7 +162,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     gap: 15px;
-    margin-top: 20px;
 }
 
 .gallery img {
@@ -170,6 +173,7 @@ h2 {
 .gallery img:hover {
     transform: scale(1.03);
 }
+
 
 /* ===========================
    CONTACT FORM
@@ -204,6 +208,7 @@ button:hover {
     background: #ffcc00;
 }
 
+
 /* ===========================
    FOOTER
 =========================== */
@@ -215,6 +220,7 @@ footer {
     margin-top: 60px;
     color: #999;
 }
+
 
 /* ===========================
    RESPONSIVE DESIGN
@@ -255,6 +261,20 @@ footer {
     }
 
     .hero p {
-        font-size: 17px;
+        font-size: 16px;
+        max-width: 100%;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .hero-photo img {
+        width: 240px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 110px 5% 60px 5%; /* Space for fixed header */
+        flex-direction: column;
+        text-align: center;
     }
 }
