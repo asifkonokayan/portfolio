@@ -65,36 +65,29 @@ header nav a {
     cursor: pointer;
     color: #e6b800;
 }
+/* MOBILE MENU */
+/* ===========================
+   MOBILE MENU (CSS-ONLY)
+=========================== */
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* 3-dot menu icon */
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #e6b800;
+    padding: 5px 10px;
+}
 
 /* MOBILE MENU */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 
-    header nav {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        background: #111;
-        padding: 15px 20px;
-        border-radius: 8px;
-        flex-direction: column;
-        width: 180px;
-    }
-
-    header nav a {
-        padding: 10px 0;
-        display: block;
-        font-size: 16px;
-    }
-
-    header nav.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
+    /* Show menu icon
 
 
 /* ===========================
